@@ -9,13 +9,13 @@
          </button>
          <div class="collapse navbar-collapse" id="navbarCollapse">
              <div class="navbar-nav ms-auto py-0">
-                 <a href="#page_home" class="nav-item nav-link active">Home</a>
-                 <a href="#page_service" class="nav-item nav-link">Service</a>
-                 <a href="service.html" class="nav-item nav-link">Portofolio</a>
-                 <a href="#page_testi" class="nav-item nav-link">Testimoni</a>
-                 <a href="service.html" class="nav-item nav-link">Galeri</a>
-                 <a href="#page_about" class="nav-item nav-link">Tentang</a>
-                 <a href="#page_contact" class="nav-item nav-link">Kontak</a>
+                 <a href="{{ route('home') }}" class="nav-item nav-link active">Home</a>
+                 <a href="{{ route('page.layanan') }}" class="nav-item nav-link">Service</a>
+                 <a href="{{ route('page.portofolio') }}" class="nav-item nav-link">Portofolio</a>
+                 <a href="{{ route('testi') }}" class="nav-item nav-link">Testimoni</a>
+                 <a href="{{ route('page.galeri') }}" class="nav-item nav-link">Galeri</a>
+                 <a href="{{ route('tentang') }}" class="nav-item nav-link">Tentang</a>
+                 <a href="{{ route('kontak') }}" class="nav-item nav-link">Kontak</a>
              </div>
          </div>
      </nav>

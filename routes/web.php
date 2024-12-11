@@ -29,6 +29,11 @@ Route::get('/kontak', [PageController::class, 'kontak'])->name('kontak');
 Route::post('/kontak', [PageController::class, 'kontak_store'])->name('kontak.store');
 Route::get('/service', [PageController::class, 'layanan'])->name('page.layanan');
 Route::get('/service/{slug}', [PageController::class, 'detail_layanan'])->name('page.detail-layanan');
+Route::get('/portofolio', [PageController::class, 'portofolio'])->name('page.portofolio');
+Route::get('/portofolio/{slug}', [PageController::class, 'detail_portofolio'])->name('page.detail-portofolio');
+Route::get('/galeri', [PageController::class, 'galeri'])->name('page.galeri');
+
+
 
 
 Route::middleware('auth')->prefix('admin')->group(function () {

@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Galeri;
 use App\Models\Layanan;
 use App\Models\Pengaturan;
 use App\Models\PesanMasuk;
+use App\Models\Portofolio;
 use App\Models\Testimoni;
 use Illuminate\Http\Request;
 
@@ -16,7 +18,8 @@ class PageController extends Controller
         return view('frontend.pages.home', [
             'pengaturan' => $pengaturan,
             'data_layanan' => Layanan::all(),
-            'data_testimoni' => Testimoni::all()
+            'data_testimoni' => Testimoni::all(),
+            'data_portofolio' => Portofolio::all()
         ]);
     }
 
@@ -71,6 +74,32 @@ class PageController extends Controller
         return view('frontend.pages.detail-layanan', [
             'title' => 'Detail Layanan',
             'item' => $item
+        ]);
+    }
+
+    public function portofolio()
+    {
+        $data_portofolio = Portofolio::all();
+        return view('frontend.pages.portofolio', [
+            'title' => 'Portofolio',
+            'data_portofolio' => $data_portofolio
+        ]);
+    }
+    public function detail_portofolio($id)
+    {
+        $item = Portofolio::where('id', $id)->firstOrFail();
+        return view('frontend.pages.detail-portofolio', [
+            'title' => 'Detail portofolio',
+            'item' => $item
+        ]);
+    }
+
+    public function galeri()
+    {
+        $data_galeri = Galeri::all();
+        return view('frontend.pages.galeri', [
+            'title' => 'Galeri',
+            'data_galeri' => $data_galeri
         ]);
     }
 }

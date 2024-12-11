@@ -18,10 +18,10 @@
               </div>
               <div class="col-md-6">
                   <h5 class="text-white mb-4">Quick Link</h5>
-                  <a class="btn btn-link" href="#page_about">Tentang</a>
-                  <a class="btn btn-link" href="#page_contact">Kontak</a>
-                  <a class="btn btn-link" href="#page_service">Layanan</a>
-                  <a class="btn btn-link" href="">Portofolio</a>
+                  <a class="btn btn-link" href="{{ route('tentang') }}">Tentang</a>
+                  <a class="btn btn-link" href="{{ route('kontak') }}">Kontak</a>
+                  <a class="btn btn-link" href="{{ route('page.layanan') }}">Layanan</a>
+                  <a class="btn btn-link" href="{{ route('page.portofolio') }}">Portofolio</a>
               </div>
           </div>
       </div>
