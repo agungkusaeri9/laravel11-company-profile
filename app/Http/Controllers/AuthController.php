@@ -25,7 +25,7 @@ class AuthController extends Controller
             $remember = request()->has('remember');
 
             if (Auth::attempt($credentials, $remember)) {
-                return redirect()->intended('dashboard');
+                return redirect()->intended('admin');
             } else {
                 return redirect()->route('login')->with('error', 'Invalid email or password');
             }
@@ -38,7 +38,6 @@ class AuthController extends Controller
     public function logout()
     {
         auth()->logout();
-
         return redirect()->route('login')->with('success', 'Logout successfully');
     }
 }

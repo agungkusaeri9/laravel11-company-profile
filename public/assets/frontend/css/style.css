@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #00B98E;
+    --primary: #004084;
     --light: #F3F6F8;
     --dark: #0E2E50;
 }
@@ -217,12 +217,17 @@
 .hero-header {
     margin-bottom: 6rem;
     padding: 12rem 0 9rem 0;
-    /* background: url('../img/bg-custom.jpg'); */
+    background: url('../img/banner.png');
     background-size: cover;
     top: 200px;
     background-repeat: no-repeat;
 }
-
+.text-primary{
+    color: var(--primary)
+}
+.btn-primary{
+    background-color: var(--primary)
+}
 .hero-header::before {
     content: '';
     position: absolute;

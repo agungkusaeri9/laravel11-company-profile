@@ -9,7 +9,7 @@
          </button>
          <div class="collapse navbar-collapse" id="navbarCollapse">
              <div class="navbar-nav ms-auto py-0">
-                 <a href="{{ route('home') }}" class="nav-item nav-link active">Home</a>
+                 <a href="{{ route('home') }}" class="nav-item nav-link">Home</a>
                  <a href="{{ route('page.layanan') }}" class="nav-item nav-link">Service</a>
                  <a href="{{ route('page.portofolio') }}" class="nav-item nav-link">Portofolio</a>
                  <a href="{{ route('testi') }}" class="nav-item nav-link">Testimoni</a>

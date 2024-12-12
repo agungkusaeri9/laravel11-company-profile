@@ -29,7 +29,6 @@ class TestimoniController extends Controller
         request()->validate([
             'foto' => ['image', 'mimes:png,jpg,jpeg', 'max:2048'],
             'nama' => ['required'],
-            'jabatan' => ['required'],
             'deskripsi' => ['required'],
         ]);
 
@@ -57,7 +56,6 @@ class TestimoniController extends Controller
         request()->validate([
             'foto' => ['image', 'mimes:png,jpg,jpeg', 'max:2048'],
             'nama' => ['required'],
-            'jabatan' => ['required'],
             'deskripsi' => ['required'],
         ]);
 

@@ -46,8 +46,7 @@
                                     @enderror
                                 </div>
                                 <div class='form-group mb-3'>
-                                    <label for='jabatan' class='mb-2'>Jabatan <span
-                                            class='text-danger small'>*</span></label>
+                                    <label for='jabatan' class='mb-2'>Jabatan</label>
                                     <input type='text' name='jabatan' id='jabatan'
                                         class='form-control @error('jabatan') is-invalid @enderror'
                                         value='{{ $item->jabatan ?? old('jabatan') }}'>
