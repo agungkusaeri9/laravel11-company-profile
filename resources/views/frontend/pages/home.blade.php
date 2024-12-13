@@ -8,7 +8,7 @@
                     <h3 class="text-white mb-4 animated zoomIn">UD. Mitra Jaya Koveksi</h3>
                     <p class="text-white pb-3 animated zoomIn">
                         Solusi
-                        Terbaik untuk Topi,Dasi Dan Bordir berkualitas
+                        Terbaik untuk Topi, Dasi Dan Bordir berkualitas
                     </p>
                     <a href="https://wa.me/{{ $pengaturan->nomor_wa }}" target="_blank"
                         class="btn btn-outline-light text-white rounded-pill border-2 py-3 px-5 animated slideInRight ">Hubungi
@@ -38,33 +38,6 @@
                         kami berkomitmen memberikan hasil terbaik yang presisi, tahan lama, dan sesuai
                         dengan kebutuhan anda.
                     </p>
-                    <div class="row g-3 mb-4">
-                        <div class="col-12 d-flex">
-                            <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
-                                <i class="fa fa-user-tie text-white"></i>
-                            </div>
-                            <div class="ms-4">
-                                <h6>Perencanaan Produksi</h6>
-                                <span>
-                                    Kami membantu merancang strategi produksi yang efektif untuk meningkatkan produktivitas
-                                    dan menekan biaya tanpa mengurangi kualitas.
-                                </span>
-                            </div>
-                        </div>
-                        <div class="col-12 d-flex">
-                            <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
-                                <i class="fa fa-chart-line text-white"></i>
-                            </div>
-                            <div class="ms-4">
-                                <h6>Analisis Keuangan</h6>
-                                <span>
-                                    Layanan kami mencakup analisis mendalam untuk memastikan kesehatan finansial bisnis
-                                    konveksi Anda
-                                    dan membantu dalam pengambilan keputusan.
-                                </span>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>

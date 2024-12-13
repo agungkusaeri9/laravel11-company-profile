@@ -1,8 +1,19 @@
 /********** Template CSS **********/
+/* :root {
+    --primary: #007bff;
+    --light: #ab0b00;
+    --dark: #00ff44;
+} */
+
 :root {
     --primary: #004084;
     --light: #F3F6F8;
     --dark: #0E2E50;
+}
+
+input:focus {
+    outline: none;
+    border: none;
 }
 
 
@@ -221,9 +232,30 @@
     background-size: cover;
     top: 200px;
     background-repeat: no-repeat;
+    filter: brightness(98%) !important;
+}
+.hero-header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    /* Overlay gelap */
+    z-index: 1;
+}
+
+/* Konten di dalam hero harus tetap di atas overlay */
+.hero-header>* {
+    position: relative;
+    z-index: 2;
 }
 .text-primary{
     color: var(--primary)
+}
+.bg-primary {
+    background-color: var(--primary) !important
 }
 .btn-primary{
     background-color: var(--primary)
@@ -454,4 +486,48 @@
     margin-right: 0;
     padding-right: 0;
     border-right: none;
+}
+
+.text-primary{
+    color: var(--primary) !important;
+}
+
+button:hover{
+    background-color: var(--primary) !important;
+}
+
+/* input:focus{
+    border-color: var(--primary) !important;
+    box-shadow: var(--primary) !important;
+} */
+
+input {
+    border: 1px solid #ccc;
+    padding: 10px;
+    outline: none;
+    transition: box-shadow 0.3s ease, border 0.3s ease;
+}
+
+input:focus {
+    border-color: var(--primary) !important;
+    box-shadow: 0 0 0 4px var(--primary) !important;
+}
+
+
+textarea {
+    border: 1px solid #ccc;
+    padding: 10px;
+    outline: none;
+    transition: box-shadow 0.3s ease, border 0.3s ease;
+}
+
+textarea:focus {
+    border-color: var(--primary) !important;
+    box-shadow: 0 0 0 4px var(--primary) !important;
+}
+
+
+button:focus {
+    border-color: var(--primary) !important;
+    box-shadow: 0 0 0 4px var(--primary) !important;
 }

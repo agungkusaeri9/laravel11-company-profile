@@ -2,7 +2,7 @@
  <div class="container-xxl position-relative p-0">
      <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
          <a href="{{ route('home') }}" class="navbar-brand p-0">
-             <img src="{{ $pengaturan->logo() }}" alt="Logo">
+             <img src="{{ $pengaturan->logo() }}" alt="Logo" class="img-fluid">
          </a>
          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
              <span class="fa fa-bars"></span>
