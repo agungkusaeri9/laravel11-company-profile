@@ -11,9 +11,27 @@
     --dark: #0E2E50;
 }
 
+input{
+    color: black !important;
+}
+label {
+    color: black !important;
+}
+
 input:focus {
     outline: none;
     border: none;
+    color: black !important;
+}
+
+body, .footer{
+    background-color: #161616 !important;
+    color: white !important;
+}
+
+button{
+    outline: none !important;
+    border: none !important;
 }
 
 
