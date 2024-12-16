@@ -28,8 +28,9 @@
                     <img class="img-fluid" src="{{ $pengaturan->logo() }}" style="max-height:300px">
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="d-inline-block border rounded-pill text-primary px-4 mb-3">Tentang Kami</div>
-                    <h2 class="mb-4">UD. Mitra Jaya Koveksi</h2>
+                    <div class="d-inline-block border rounded-pill text-primary px-4 mb-3 text-blue-custom">Tentang Kami
+                    </div>
+                    <h2 class="mb-4 text-blue-custom">UD. Mitra Jaya Koveksi</h2>
                     <p class="mb-4">
                         UD. Mitra Jaya Konveksi, berdiri sejak tahun 2002, adalah usaha yang
                         bergerak di bidang produksi topi, dasi, dan bordir komputer berkualitas tinggi. Kami
@@ -48,18 +49,18 @@
     <div class="container-xxl py-6" id="page_service">
         <div class="container">
             <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <div class="d-inline-block border rounded-pill text-primary px-4 mb-3">layanan Kami</div>
-                <h2 class="mb-5">Solusi Terbaik untuk Kebutuhan Konveksi Anda</h2>
+                <div class="d-inline-block border rounded-pill text-primary px-4 mb-3 text-blue-custom">layanan Kami</div>
+                <h2 class="mb-5 text-blue-custom">Solusi Terbaik untuk Kebutuhan Konveksi Anda</h2>
             </div>
             <div class="row g-4">
                 @foreach ($data_layanan as $layanan)
-                    <a href="{{ route('page.detail-layanan', $layanan->slug) }}">
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <a href="{{ route('page.detail-layanan', $layanan->slug) }}">
                             <div class="rounded h-100">
                                 <div class="p-4">
                                     <div style="position: relative">
                                         <img src="{{ $layanan->gambar() }}" class="img-fluid"
-                                            style="filter: brightness(0.5);height:250px;object-fit:cover" alt="">
+                                            style="filter: brightness(0.7);height:250px;object-fit:cover" alt="">
                                         <div style="position: absolute;bottom:10px;left:10px;right:10px">
                                             <h5 class="mb-3 text-white" style="filter: brightness(0.9)">{{ $layanan->nama }}
                                             </h5>
@@ -69,8 +70,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                 @endforeach
             </div>
         </div>
@@ -109,8 +110,8 @@
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="d-inline-block border rounded-pill text-primary px-4 mb-3">Keunggulan Kami</div>
-                    <h2 class="mb-4">“Mengapa Memilih UD. Mitra Jaya Konveksi?</h2>
+                    <div class="d-inline-block border rounded-pill text-blue-custom px-4 mb-3">Keunggulan Kami</div>
+                    <h2 class="mb-4 text-blue-custom">“Mengapa Memilih UD. Mitra Jaya Konveksi?</h2>
                     <p>
                         “UD. Mitra Jaya Konveksi, berdiri sejak 2002, memprioritaskan kualitas dan
                         kecepatan dalam pembuatan topi, dasi, dan bordir komputer. Kami menyediakan layanan
@@ -122,59 +123,59 @@
                     <div class="row g-5">
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
                             <div class="d-flex align-items-center mb-3">
-                                <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
+                                <div class="flex-shrink-0 btn-square bg-blue-custom rounded-circle me-3">
                                     <i class="fa fa-tshirt text-white"></i>
                                 </div>
-                                <h6 class="mb-0">Berpengalaman Sejak 2002 </h6>
+                                <h6 class="mb-0 text-blue-custom">Berpengalaman Sejak 2002 </h6>
                             </div>
                             <span>Dengan lebih dari 20 tahun pengalaman, kami telah dipercaya oleh berbagai pelanggan
                                 dari berbagai sektor. </span>
                         </div>
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.2s">
                             <div class="d-flex align-items-center mb-3">
-                                <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
+                                <div class="flex-shrink-0 btn-square bg-blue-custom rounded-circle me-3">
                                     <i class="fa fa-cogs text-white"></i>
                                 </div>
-                                <h6 class="mb-0">Kualitas Terjamin</h6>
+                                <h6 class="mb-0 text-blue-custom">Kualitas Terjamin</h6>
                             </div>
                             <span>Menggunakan bahan terbaik dan teknologi bordir komputer modern untuk memastikan
                                 hasil yang presisi, rapi, dan tahan lama.</span>
                         </div>
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
                             <div class="d-flex align-items-center mb-3">
-                                <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
+                                <div class="flex-shrink-0 btn-square bg-blue-custom rounded-circle me-3">
                                     <i class="fa fa-award text-white"></i>
                                 </div>
-                                <h6 class="mb-0">Custom Desain</h6>
+                                <h6 class="mb-0 text-blue-custom">Custom Desain</h6>
                             </div>
                             <span>Kami melayani pembuatan produk dengan desain yang dapat disesuaikan sepenuhnya
                                 dengan kebutuhan dan keinginan pelanggan. </span>
                         </div>
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
                             <div class="d-flex align-items-center mb-3">
-                                <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
+                                <div class="flex-shrink-0 btn-square bg-blue-custom rounded-circle me-3">
                                     <i class="fa fa-users text-white"></i>
                                 </div>
-                                <h6 class="mb-0">Pelayanan Profesional </h6>
+                                <h6 class="mb-0 text-blue-custom">Pelayanan Profesional </h6>
                             </div>
                             <span>Tim kami yang berpengalaman siap memberikan solusi terbaik, mulai dari konsultasi
                                 desain hingga proses produksi.</span>
                         </div>
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
                             <div class="d-flex align-items-center mb-3">
-                                <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
+                                <div class="flex-shrink-0 btn-square bg-blue-custom rounded-circle me-3">
                                     <i class="fa fa-user-tie text-white"></i>
                                 </div>
-                                <h6 class="mb-0">Harga Kompetitif </h6>
+                                <h6 class="mb-0 text-blue-custom">Harga Kompetitif </h6>
                             </div>
                             <span>Menawarkan harga yang bersaing tanpa mengurangi kualitas produk dan pelayanan. </span>
                         </div>
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.6s">
                             <div class="d-flex align-items-center mb-3">
-                                <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
+                                <div class="flex-shrink-0 btn-square bg-blue-custom rounded-circle me-3">
                                     <i class="fa fa-headset text-white"></i>
                                 </div>
-                                <h6 class="mb-0">Tepat Waktu </h6>
+                                <h6 class="mb-0 text-blue-custom">Tepat Waktu </h6>
                             </div>
                             <span>Komitmen kami adalah mengirimkan pesanan tepat waktu sesuai dengan jadwal yang
                                 telah disepakati. </span>

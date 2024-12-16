@@ -18,18 +18,18 @@
     <div class="container-xxl py-6" id="page_service">
         <div class="container">
             <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <div class="d-inline-block border rounded-pill text-primary px-4 mb-3">layanan Kami</div>
-                <h2 class="mb-5">Solusi Terbaik untuk Kebutuhan Konveksi Anda</h2>
+                <div class="d-inline-block border rounded-pill text-primary px-4 mb-3 text-blue-custom">layanan Kami</div>
+                <h2 class="mb-5 text-blue-custom">Solusi Terbaik untuk Kebutuhan Konveksi Anda</h2>
             </div>
             <div class="row g-4">
                 @foreach ($data_layanan as $layanan)
-                    <a href="{{ route('page.detail-layanan', $layanan->slug) }}">
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <a href="{{ route('page.detail-layanan', $layanan->slug) }}">
                             <div class="rounded h-100">
                                 <div class="p-4">
                                     <div style="position: relative">
                                         <img src="{{ $layanan->gambar() }}" class="img-fluid"
-                                            style="filter: brightness(0.5);height:250px;object-fit:cover" alt="">
+                                            style="filter: brightness(0.7);height:250px;object-fit:cover" alt="">
                                         <div style="position: absolute;bottom:10px;left:10px;right:10px">
                                             <h5 class="mb-3 text-white" style="filter: brightness(0.9)">{{ $layanan->nama }}
                                             </h5>
@@ -39,8 +39,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                 @endforeach
             </div>
         </div>
