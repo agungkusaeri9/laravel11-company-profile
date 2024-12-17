@@ -17,8 +17,8 @@
     <div class="container-xxl">
         <div class="container">
             <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <div class="d-inline-block border rounded-pill text-primary px-4 mb-3">Photo Gallery</div>
-                <h2 class="mb-5">Capturing Moments and Memories</h2>
+                <div class="d-inline-block border rounded-pill text-blue-custom px-4 mb-3">Photo Gallery</div>
+                <h2 class="mb-5 text-blue-custom">Capturing Moments and Memories</h2>
             </div>
             <div class="row g-4">
                 @foreach ($data_galeri as $galeri)

@@ -82,8 +82,9 @@
     <div class="container-xxl py-6" id="page_portofolio">
         <div class="container">
             <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <div class="d-inline-block border rounded-pill text-primary px-4 mb-3">Portofolio Kami</div>
-                <h2 class="mb-5">Menampilkan Proyek dan Keahlian Konveksi Kami</h2>
+                <div class="d-inline-block border rounded-pill text-primary px-4 mb-3 text-blue-custom">Portofolio Kami
+                </div>
+                <h2 class="mb-5 text-blue-custom">Menampilkan Proyek dan Keahlian Konveksi Kami</h2>
             </div>
             <div class="row g-4">
                 @foreach ($data_portofolio as $portofolio)
@@ -192,19 +193,19 @@
     <div class="container-xxl" id="page_testi">
         <div class="container">
             <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <div class="d-inline-block border rounded-pill text-primary px-4 mb-3">Testimoni</div>
-                <h2 class="mb-5">Apa Kata Klien Kami!</h2>
+                <div class="d-inline-block border rounded-pill text-blue-custom px-4 mb-3">Testimoni</div>
+                <h2 class="mb-5 text-blue-custom">Apa Kata Klien Kami!</h2>
             </div>
             <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
                 @foreach ($data_testimoni as $test)
                     <div class="testimonial-item rounded p-4">
-                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <i class="fa fa-quote-left fa-2x text-blue-custom mb-3"></i>
                         <p>{{ $test->deskripsi }}
                         </p>
                         <div class="d-flex align-items-center">
                             <img class="img-fluid flex-shrink-0 rounded-circle" src="{{ $test->foto() }}">
                             <div class="ps-3">
-                                <h6 class="mb-1">{{ $test->nama }}</h6>
+                                <h6 class="mb-1 text-blue-custom">{{ $test->nama }}</h6>
                                 <small>{{ $test->jabatan }}</small>
                             </div>
                         </div>
@@ -218,8 +219,8 @@
     <div class="container-xxl py-6" id="page_contact">
         <div class="container">
             <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <div class="d-inline-block border rounded-pill text-primary px-4 mb-3">Hubungi Kami</div>
-                <h2 class="mb-5">Ada Pertanyaan? Jangan Ragu untuk Menghubungi Kami!</h2>
+                <div class="d-inline-block border rounded-pill text-blue-custom px-4 mb-3">Hubungi Kami</div>
+                <h2 class="mb-5 text-blue-custom">Ada Pertanyaan? Jangan Ragu untuk Menghubungi Kami!</h2>
             </div>
             @if (session('success'))
                 <div class="row justify-content-center">

@@ -7,6 +7,8 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb justify-content-center">
                     <li class="breadcrumb-item"><a class="text-white" href="{{ route('home') }}">Home</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="{{ route('page.portofolio') }}">Portofolio</a>
+                    </li>
                     <li class="breadcrumb-item text-white active" aria-current="page">{{ $item->judul }}</li>
                 </ol>
             </nav>

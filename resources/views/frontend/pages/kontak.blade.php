@@ -18,8 +18,8 @@
     <div class="container-xxl py-6">
         <div class="container">
             <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <div class="d-inline-block border rounded-pill text-primary px-4 mb-3">Hubungi Kami</div>
-                <h2 class="mb-5">Ada Pertanyaan? Jangan Ragu untuk Menghubungi Kami!</h2>
+                <div class="d-inline-block border rounded-pill text-blue-custom px-4 mb-3">Hubungi Kami</div>
+                <h2 class="mb-5 text-blue-custom">Ada Pertanyaan? Jangan Ragu untuk Menghubungi Kami!</h2>
             </div>
             @if (session('success'))
                 <div class="row justify-content-center">
